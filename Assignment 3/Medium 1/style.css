@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Cossette+Texte:wght@400;700&family=Fontdiner+Swanky&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("./bg_images.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(6px);
+  transform: scale(1.1);
+  z-index: -2;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.nav-left img {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  margin-right: 100px;
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav-center a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-center i {
+  color: white;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 100px;
+}
+
+.nav-right i {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: white;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav-right i:hover {
+  transform: translateY(-5px) scale(1.05);
+  background: #f7d774;
+}
+
+.center {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.center p {
+  position: absolute;
+  left: 17%;
+  top: 1%;
+  color: white;
+  font-size: 28px;
+  padding-left: 20px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.center h1 {
+  color: white;
+  font-size: 110px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  z-index: 1;
+  
+}
+
+.subtitle {
+  position: absolute;
+  right: 18%;
+  top: 145px;
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.center img {
+  position: absolute;
+  top: 10px;
+  height: 650px;
+  object-fit: contain;
+  z-index: 5;
+  filter: drop-shadow(0px 10px 30px rgba(0,0,0,0.8));
+}
+
+.center button {
+  position: absolute;
+  top: 390px;
+  padding: 18px 75px;
+  border: none;
+  outline: none;
+  background: url("./button_image.png") center center no-repeat;
+  background-size: cover;
+  color: #1d1d1d;
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.center button:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ FIXED: Curved top + no extra bottom space */
+.vision-section {
+  position: absolute;
+  top: 62%;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  z-index: 20;
+  background: none;
+}
+
+/* Curved dark container */
+.vision-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5%;
+  width: 110%;
+  height: 120%;
+  /* Sirf image background */ 
+  background-image: url("./ChatGPT Image May 10, 2026, 06_56_19 PM-Photoroom.png"); background-size: cover; background-position: center; 
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.vision-content {
+  position: relative;
+  z-index: 2;
+  width: 78%;
+  margin: auto;
+  padding-top: 300px;
+  padding-bottom: 80px;
+  color: white;
+}
+
+.vision-content h2 {
+  text-align: center;
+  font-size: 58px;
+  letter-spacing: 6px;
+  
+}
+
+.vision-line {
+  width: 100%;
+  height: 110px;
+  margin-bottom: 50px;
+  margin-top: 0px;
+}
+
+.vision-line img {
+  width: 100%;
+  object-fit: cover;
+  height: 150px;
+}
+
+.vision-text {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.vision-text p {
+  width: 50%;
+  font-size: 23px;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.85);
+  font-family: sans-serif;
+}
