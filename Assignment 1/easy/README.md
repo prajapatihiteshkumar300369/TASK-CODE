@@ -21,10 +21,6 @@ https://preeminent-cendol-c76fcf.netlify.app/
 ![Project Preview](./preview.png)
 
 
-```md
-![Project Preview](./assets/preview.png)
-```
-
 ---
 
 # 🎯 Assignment Objective
