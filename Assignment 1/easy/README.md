@@ -18,8 +18,8 @@ https://preeminent-cendol-c76fcf.netlify.app/
 ---
 
 # 📸 Preview
+![Project Preview](./preview.png)
 
-[alt text](image.png)
 
 ```md
 ![Project Preview](./assets/preview.png)
