@@ -210,7 +210,7 @@ body::before {
   width: 110%;
   height: 120%;
   /* Sirf image background */ 
-  background-image: url("./ChatGPT Image May 10, 2026, 06_56_19 PM-Photoroom.png"); background-size: cover; background-position: center; 
+  background-image: url("./vision.png"); background-size: cover; background-position: center; 
   background-repeat: no-repeat;
   z-index: 0;
 }
