@@ -1,0 +1,187 @@
+// Q.10 -> Accept two number and print the greatest between them
+// Q.11 -> Accept an interger and check wheather it is an even number or odd.
+// Q.12 -> Accept name and age from the user. Check if the user is a valid is a valid voter or not
+// Q.13 -> Accept three number and print the greatest amount them
+// Q.14 -> Accept a year and check if it a learp year or not
+// Q.15 -> Shop discount calculate system
+// Q.16 -> Bijli bill calculate syatem
+// Q.17 -> Counting number of days in given month of a year
+
+
+
+
+
+
+
+
+
+// 14. Check Profit or Loss
+
+let costPrice = prompt("Enter the cost price: ");
+let sellingPrice = prompt("Enter the selling price: ");
+
+
+if(sellingPrice > costPrice){
+  profit = sellingPrice - costPrice;
+  console.log("Profit : "+profit);
+}
+
+else if(costPrice > sellingPrice){
+  lossPrice = costPrice -sellingPrice;
+  console.log("Loss: "+lossPrice);
+}
+
+else{
+  console.log("No Profit And No Loss");
+  
+}
+// 13. Check Temperature
+
+let number = Number(prompt("Enter the number: "));
+
+if(number > 40){
+  console.log("Hot");
+}
+else if(number<15){
+  console.log("Cold");
+}
+else{
+  console.log("Normal");
+}
+// 12. Check Driving Eligibility
+
+let age = Number(prompt("Enter age: "));
+
+if(age >= 18 && age <= 50){
+  console.log("Age is Driving Eligibility");
+}
+else if(age > 50){
+  console.log("To late youe age expiry Driving Eligibility");
+}
+else{
+  console.log("Not Driving Eligibility");
+  
+}
+// 11. Number is Zero or Not
+
+let number = Number(prompt("Enter the number: "))
+
+ if(number === 0){
+  console.log("Number Zero Hai");
+}else{
+  console.log("Number Zero Nahi hai ");
+}
+
+// 10. Check Uppercase or Lowercase
+
+let char = prompt("Enter the alphabet: ");
+
+if(char.length !== 1){
+console.log("Please enter only one character");
+}
+else if(char >= "A" && char <= "Z") {
+  console.log("Uppercase Alphabet");
+}
+else if(char >= "a" && char<= "z"){
+  console.log("Lowercase Alphabet");
+}
+else{
+  console.log("Invalid Input");
+}
+
+
+// 9. Character is Vowel or Consonant
+
+let vowelAndConsonantInput = prompt("Enter the Vowel or Consonant: ").toLowerCase(); 
+
+if(vowelAndConsonantInput === "a" ||
+  vowelAndConsonantInput === "e" ||
+  vowelAndConsonantInput === "i" ||
+  vowelAndConsonantInput === "o" ||
+  vowelAndConsonantInput === "a" ){
+  console.log("This Character is Vowel: " + vowelAndConsonantInput);
+}
+else{
+ console.log("This Character is Consonant: " + vowelAndConsonantInput);
+}
+// 8. Leap Year
+
+let year = Number(prompt("Enter the number: "));
+
+if((year % 4 ===0 && year % 100 !== 0) || year % 400 ===0){
+  console.log("Leap Year: " + year);
+}
+else{
+  console.log("Not Leap Year");
+  
+}
+// 7. Divisible by 3 and 5
+
+let num = Number(prompt("Enter the number: "))
+
+if(num % 3 ===0 && num % 5 ===0 ){
+  console.log(`Divided by both number 3 and 5: ${num}`);
+}
+else{
+  console.log("Not Divided by both number");
+  
+}
+
+// 6. Divisible by 5
+
+let num = Number(prompt("Enter the number: "))
+
+if(num % 5 === 0 && num>0){
+  console.log(`Divided by ${num}`);
+}else{
+  console.log(`Not Divided by ${num}`);
+}
+// 5. Greatest Between Two Numbers
+
+let numberOne = Number(prompt("Enter the 1 number: "));
+let numberTwo = Number(prompt("Enter the 2 number: "));
+
+if(numberOne > numberTwo){
+  console.log(numberOne + " Is Greatest");
+}else{
+  console.log(numberTwo + " Is Greatest");
+}
+
+// 4. Pass or Fail
+let marks = Number(prompt("Enter marks: "));
+
+if (marks >= 35) {
+  console.log("Student Pass");
+} else {
+  console.log("Studnet Fail");
+}
+
+// 3. Vote Eligibility
+
+let age = Number(prompt("Enter the user agr:"));
+
+if (age >= 18) {
+  console.log("Valid vote");
+} else {
+  console.log("Invalid vote");
+}
+
+// 2. Even or Odd
+let number = Number(prompt("Enter the number even and odd"));
+if (number > 0 && number % 2 === 0) {
+  console.log("Even Number");
+} else if (number < 0) {
+  console.log("Invalid number");
+} else {
+  console.log("Odd Number");
+}
+
+// 1. Positive or Negative Number
+let number = Number(prompt("Enter the number"));
+if (number > 0) {
+  console.log("Number Positive hai");
+} else if (number < -1) {
+  console.log("Number negative hai");
+} else {
+  console.log("Invalid number");
+}
