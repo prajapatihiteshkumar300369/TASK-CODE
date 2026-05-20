@@ -1,0 +1,405 @@
+// Q.10 -> Accept two number and print the greatest between them
+// Q.11 -> Accept an interger and check wheather it is an even number or odd.
+// Q.12 -> Accept name and age from the user. Check if the user is a valid is a valid voter or not
+// Q.13 -> Accept three number and print the greatest amount them
+// Q.14 -> Accept a year and check if it a learp year or not
+// Q.15 -> Shop discount calculate system
+// Q.16 -> Bijli bill calculate syatem
+// Q.17 -> Counting number of days in given month of a year
+
+
+
+
+// 🟡 MEDIUM LEVEL (21–45)
+
+// 29. Number Guessing Logic
+
+let secretNumber = 10;
+let guessNumber = Number(prompt("Guessing Number: "));
+
+if (secretNumber === guessNumber) {
+  console.log("correct");
+} else if (secretNumber > guessNumber) {
+  console.log("too low");
+} else if (secretNumber < guessNumber) {
+  console.log("too high");
+} else {
+  console.log("invalid number");
+}
+
+
+// 28. Shopping Discount System
+// 5000 → 20%
+// 2000 → 10%
+
+
+let amount = 6500;
+let disc = 0;
+
+if(amount >= 5000){
+  disc = 20;
+}
+else if(amount >=2000){
+  disc = 10;
+}
+
+let finalAmount = amount - ((amount*disc)/100);
+
+console.log(`Amount: ${amount}`);
+console.log(`Discount: ${disc}%`);
+console.log(`Discount Amount: ${((amount*disc)/100)}`);
+console.log(`Final Amount: ${finalAmount}`);
+
+// 27. Salary Bonus System
+
+
+// formula => bonus = (salary*bonuspercentange)/100;
+
+let enterSalary = 50000;
+let bonus = 0;
+
+if(enterSalary <= 20000){
+  bonus = (enterSalary*20)/100;
+}
+else if(enterSalary <= 50000){
+  bonus = (enterSalary*10)/100;
+}
+else{
+  bonus = (enterSalary*5)/100;
+}
+
+let finalSalary = enterSalary + bonus;
+
+console.log("Salary:", enterSalary);
+console.log("Bonus:", bonus);
+console.log("Final Salary:", finalSalary);
+
+
+// 26. Traffic Light System
+// Red → Stop
+// Yellow → Wait
+// Green → Go
+
+let enterLight = "Yellow".toLocaleLowerCase();
+
+
+if(enterLight === "red"){
+  console.log("Stop");
+}
+else if(enterLight === "yellow"){
+console.log("Wait");
+}
+else if(enterLight === "green"){
+console.log("GO");
+}else{
+  console.log("Invalid light color");
+}
+// 25. Login Authentication System
+
+let username = "hitesh";
+let email = "hitesh@gmail.com";
+let password = "123456";
+
+let enteredUsernameOrEmail = "hitesh@gmail.com";
+let enteredPassword = "123456";
+
+if (
+  (username === enteredUsernameOrEmail || email === enteredUsernameOrEmail) &&
+  password === enteredPassword
+) {
+  console.log("Login Successfully");
+} else {
+  console.log("Invalid login details");
+}
+
+// 23. BMI Calculator
+// Underweight
+// Normal
+// Overweight
+
+let weight = 85;
+let height = 1.75;
+
+let bmi = weight / (height * height); // Formula
+
+if (bmi < 18.5) {
+  console.log("Under Weight");
+} else if (bmi >= 18.5 && bmi <= 24.9) {
+  console.log("Normal weight");
+} else if (bmi >= 25 && bmi <= 29.9) {
+  console.log("Over weight");
+} else {
+  console.log("Obese");
+}
+
+console.log("BMI:", bmi.toFixed(2));
+
+// 22. ATM Withdrawal System
+
+let atmPin = "1234";
+let totalAmount = "1500";
+
+let typeAtmPin = prompt("Enter the ATM pin");
+
+if (atmPin === typeAtmPin) {
+  let withdrawalAmount = prompt("Type the amount");
+  // Invalid amount check
+  if (withdrawalAmount <= 0) {
+    console.log("Please enter a valid amount.");
+  } else if (withdrawalAmount > totalAmount) {
+    console.log("Insufficient balance.");
+  } else {
+    totalAmount -= withdrawalAmount;
+    console.log("Withdrawal Successful.");
+    console.log("Remaining Balance: " + totalAmount);
+  }
+} else {
+  console.log("Invalid pin");
+}
+
+// 21. Student Grade Calculator
+// 90+ → A
+// 70+ → B
+// 50+ → C
+// else Fail
+
+let gradeNumber = prompt("Enter Grade Number: ");
+
+if (gradeNumber >= 90) {
+  console.log("Grade A");
+} else if (gradeNumber >= 70) {
+  console.log("Grade B");
+} else if (gradeNumber >= 50) {
+  console.log("Grade C");
+} else {
+  console.log("Fail");
+}
+
+// ------------------------------
+// ------------------------------
+// 🟢 EASY LEVEL (1–20)
+// ------------------------------
+// ------------------------------
+
+// 20. Check Number is Multiple of 7
+let number = Number(prompt("Enter the number"));
+if (number % 7 === 0) {
+  console.log("Multiple 7");
+} else {
+  console.log("not Multiple 7");
+}
+// 19. Username and Password Validation
+
+let correctUsername = "Hitesh";
+let correctPassword = "Hitesh@123";
+
+let userNameType = prompt("Enter the username");
+let passwordType = prompt("Enter the password");
+
+if (userNameType === correctUsername && passwordType === correctPassword) {
+  console.log("Login successfully");
+} else {
+  console.log("Invalid Username or Password");
+}
+// 18. Mobile Battery Status
+
+var batteryStatus = Number(prompt("Enter the battery percentage:"));
+
+if (batteryStatus > 80) {
+  console.log("Battery Full");
+} else if (batteryStatus > 30 && batteryStatus <= 80) {
+  console.log("Battery Medium");
+} else {
+  console.log("Battery Low");
+}
+// 17. Check Weekend or Weekday
+
+let dayName = prompt("Enter day name:").toLowerCase();
+
+if (dayName === "saturday" || dayName === "sunday") {
+  console.log("Weekend");
+} else {
+  console.log("Weekday");
+}
+
+// 16. Electricity Bill Category
+
+let unit = Number(prompt("Enter Units:"));
+
+if (unit < 100) {
+  console.log("Low");
+} else if (unit >= 100 && unit <= 300) {
+  console.log("Medium");
+} else {
+  console.log("High");
+}
+
+// 15. Check Largest of 3 Numbers
+
+let number1 = Number(prompt("Enter 1st number:"));
+let number2 = Number(prompt("Enter 2nd number:"));
+let number3 = Number(prompt("Enter 3nd number:"));
+
+if (number1 > number2 && number1 > number3) {
+  console.log("First  number is big");
+} else if (number2 > number1 && number2 > number3) {
+  console.log("Second  number is big");
+} else if (number3 > number1 && number3 > number2) {
+  console.log("Third  number is big");
+} else {
+  console.log("Number is big");
+}
+// 14. Check Profit or Loss
+
+let costPrice = prompt("Enter the cost price: ");
+let sellingPrice = prompt("Enter the selling price: ");
+
+if (sellingPrice > costPrice) {
+  profit = sellingPrice - costPrice;
+  console.log("Profit : " + profit);
+} else if (costPrice > sellingPrice) {
+  lossPrice = costPrice - sellingPrice;
+  console.log("Loss: " + lossPrice);
+} else {
+  console.log("No Profit And No Loss");
+}
+// 13. Check Temperature
+
+let number = Number(prompt("Enter the number: "));
+
+if (number > 40) {
+  console.log("Hot");
+} else if (number < 15) {
+  console.log("Cold");
+} else {
+  console.log("Normal");
+}
+// 12. Check Driving Eligibility
+
+let age = Number(prompt("Enter age: "));
+
+if (age >= 18 && age <= 50) {
+  console.log("Age is Driving Eligibility");
+} else if (age > 50) {
+  console.log("To late youe age expiry Driving Eligibility");
+} else {
+  console.log("Not Driving Eligibility");
+}
+// 11. Number is Zero or Not
+
+let number = Number(prompt("Enter the number: "));
+
+if (number === 0) {
+  console.log("Number Zero Hai");
+} else {
+  console.log("Number Zero Nahi hai ");
+}
+
+// 10. Check Uppercase or Lowercase
+
+let char = prompt("Enter the alphabet: ");
+
+if (char.length !== 1) {
+  console.log("Please enter only one character");
+} else if (char >= "A" && char <= "Z") {
+  console.log("Uppercase Alphabet");
+} else if (char >= "a" && char <= "z") {
+  console.log("Lowercase Alphabet");
+} else {
+  console.log("Invalid Input");
+}
+
+// 9. Character is Vowel or Consonant
+
+let vowelAndConsonantInput = prompt(
+  "Enter the Vowel or Consonant: ",
+).toLowerCase();
+
+if (
+  vowelAndConsonantInput === "a" ||
+  vowelAndConsonantInput === "e" ||
+  vowelAndConsonantInput === "i" ||
+  vowelAndConsonantInput === "o" ||
+  vowelAndConsonantInput === "a"
+) {
+  console.log("This Character is Vowel: " + vowelAndConsonantInput);
+} else {
+  console.log("This Character is Consonant: " + vowelAndConsonantInput);
+}
+// 8. Leap Year
+
+let year = Number(prompt("Enter the number: "));
+
+if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+  console.log("Leap Year: " + year);
+} else {
+  console.log("Not a Leap Year");
+}
+// 7. Divisible by 3 and 5
+
+let num = Number(prompt("Enter the number: "));
+
+if (num % 3 === 0 && num % 5 === 0) {
+  console.log(`Divided by both number 3 and 5: ${num}`);
+} else {
+  console.log("Not Divided by both number");
+}
+
+// 6. Divisible by 5
+
+let num = Number(prompt("Enter the number: "));
+
+if (num % 5 === 0 && num > 0) {
+  console.log(`Divided by ${num}`);
+} else {
+  console.log(`Not Divided by ${num}`);
+}
+// 5. Greatest Between Two Numbers
+
+let numberOne = Number(prompt("Enter the 1 number: "));
+let numberTwo = Number(prompt("Enter the 2 number: "));
+
+if (numberOne > numberTwo) {
+  console.log(numberOne + " Is Greatest");
+} else {
+  console.log(numberTwo + " Is Greatest");
+}
+
+// 4. Pass or Fail
+let marks = Number(prompt("Enter marks: "));
+
+if (marks >= 35) {
+  console.log("Student Pass");
+} else {
+  console.log("Studnet Fail");
+}
+
+// 3. Vote Eligibility
+
+let age = Number(prompt("Enter the user agr:"));
+
+if (age >= 18) {
+  console.log("Valid vote");
+} else {
+  console.log("Invalid vote");
+}
+
+// 2. Even or Odd
+let number = Number(prompt("Enter the number even and odd"));
+if (number > 0 && number % 2 === 0) {
+  console.log("Even Number");
+} else if (number < 0) {
+  console.log("Invalid number");
+} else {
+  console.log("Odd Number");
+}
+
+// 1. Positive or Negative Number
+let number = Number(prompt("Enter the number"));
+if (number > 0) {
+  console.log("Number Positive hai");
+} else if (number < -1) {
+  console.log("Number negative hai");
+} else {
+  console.log("Invalid number");
+}
