@@ -1,0 +1,195 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Q17. Last digit print karo 
+// Q18. First digit print karo
+
+let number = 4567;
+let firstDigit = 0;
+let lastDigit = 0;
+
+for (let i = number; i > 0; i = Math.floor(i / 10)) {
+  let digit = number % 10;
+  firstDigit = i;
+  lastDigit = digit;
+}
+
+console.log(`First Digit: ${firstDigit}`);
+console.log(`Last Digit: ${lastDigit}`);
+
+// Q16. Product of digits nikalo
+
+let number = 152;
+let pSum = 0;
+
+for(let i=number;i>0;i=Math.floor(i/10)){
+  let digit = i%10;
+  pSum += digit;
+}
+
+console.log(`Product of digits: ${pSum}`);
+
+// Q15. Sum of digits nikalo
+
+let number = 12345678911;
+let sum = 0;
+
+
+for(let i=number;i>0;i=Math.floor(i/10)){
+  let digit = i%10;
+  sum+=digit;
+}
+
+console.log(`Sum of digits: ${sum}`);
+
+// Q14. Number reverse karo
+
+let number = 123456; 
+let reverse = 0;
+
+for(let i=number;i>0;i=Math.floor(i/10)){
+  let digit = i%10;
+  reverse = reverse*10 + digit;
+}
+
+console.log(`Reverse Number: ${reverse}`);
+
+
+// Q13. Count digits in a number
+
+let number = 1234567891;
+let count = 0;
+
+for(let i=number;i>0;i=Math.floor(i/10)){
+  count++;
+}
+
+console.log(`Count Digit: ${count}`);
+
+// Q12. Factorial find karo
+
+let favtorial = 1;
+for(let i=1;i<=5;i++){
+favtorial*=i;
+}
+console.log("Factorial: "+favtorial);
+
+// Q11. N numbers ka multiplication karo
+
+let enterNumber = Number(prompt("Enter the number:"));
+let multiplication = 1;
+
+for(let i=1;i<=enterNumber;i++){
+  multiplication *= i;
+}
+
+console.log(`Total Multiplication ${multiplication}`);
+
+// Q10. 1 se N tak odd numbers ka sum nikalo
+
+let enterNumber = Number(prompt("Enter the number"));
+let sum=0;
+
+for(let i=1;i<enterNumber;i++){
+if(i%2===1){
+  sum = sum+i;
+}
+}
+
+console.log(`Total Odd Number Sum: ${sum}`);
+
+// Q9. 1 se N tak even numbers ka sum nikalo
+
+let enterNumber = Number(prompt("Enter the number:"));
+let sum = 0;
+
+for(let i=1;i<=enterNumber;i++){
+  if(i%2===0){
+    sum += i;
+  }
+}
+
+console.log(`Total Sum For Even Number: ${sum}`);
+
+// Q8. 1 se N tak numbers ka sum nikalo
+
+let enterNumber = Number(prompt("Enter the number: "));
+let sum=0;
+
+for(let i=1;i<=enterNumber;i++){
+  sum += i;
+}
+
+console.log(`Total Sum: ${sum}`);
+
+// Q7. N se 1 tak reverse print karo
+
+let userNumber = Number(prompt("Enter the number"));
+
+for(let i=userNumber;i>0;i--){
+  console.log(i);
+}
+
+// Q6. 1 se N tak numbers print karo
+
+let userNumber = Number(prompt("Enter the number"));
+
+for(let i=1;i<=userNumber;i++){
+  console.log(i);
+}
+
+// Q5. User se number lo aur uska table print karo
+
+let userInput = Number(prompt("Enter the table number"))
+
+for(let i=1;i<11;i++){
+  console.log(`${userInput} * ${i} = ${userInput*i}`)
+}
+
+// Q4. 10 se 1 tak reverse counting print karo
+
+for(let i = 10;i>0;i--){
+  console.log(i);
+}
+
+// Q3. 1 se 100 tak odd numbers print karo
+
+for(let i = 1;i<101;i++){
+  if(i%2===1){
+    console.log(i);
+  }
+}
+
+// Q2. 1 se 100 tak even numbers print karo
+
+for(let i=1;i<101;i++){
+  if(i % 2 ===0){
+    console.log(i);
+  }
+}
+
+// Q1. 1 se 10 tak print karo
+
+for(let i=1;i<11;i++){
+  console.log(i);
+}

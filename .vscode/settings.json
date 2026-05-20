@@ -1,0 +1,8 @@
+{
+  "livePreview.autoRefreshPreview": "On Changes to Saved Files",
+  "livePreview.customExternalBrowser": "Default",
+  "livePreview.httpHeaders": {
+    
+    "Accept-Ranges": "bytes"
+  }
+}
